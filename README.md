@@ -44,3 +44,23 @@ One benefit of using layouts in Next.js is that on navigation, only the page com
 **Why use layouts?**
 That's right, the layout file is the best way to create a shared layout that all pages in your application can use.
 
+[Vercel storage vercel-postgres sdk](https://vercel.com/docs/storage/vercel-postgres/sdk)
+
+That's right, you should not query your database directly when fetching data on the client as this would expose your database secrets.
+
+Server components allow you fetch data directly from your database.
+
+SQL allows you to write targeted queries to fetch and manipulate specific data.
+
+## When might you want to use a waterfall pattern?
+To satisfy a condition before making the next request. For example, you might want to fetch a user's ID and profile information first. Once you have the ID, you might then proceed to fetch their list of friends.
+
+to replace the waterfall pattern use 
+[MDN Promise all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+
+[Nextjs learn static and dynamic rendering](https://nextjs.org/learn/dashboard-app/static-and-dynamic-rendering)
+
+Why might static rendering not be a good fit for a dashboard app?
+
+Because the application will not reflect the latest data changes. When your data updates, you want to show the latest changes in your dashboard. Static Rendering is not a good fit for this use case.
+
